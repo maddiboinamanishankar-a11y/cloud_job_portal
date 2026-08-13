@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template, request, redirect, url_for, flash, session
-from .models import db, User, Job, Application
+from models import db, User, Job, Application
 from functools import wraps
 from sqlalchemy import or_
 
