@@ -1,1 +1,1 @@
-web: gunicorn run:app
+web: gunicorn --fatory __init__:create_app
