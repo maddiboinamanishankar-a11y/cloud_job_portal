@@ -139,3 +139,9 @@ def update_status(app_id):
         application.status = status
         db.session.commit()
     return redirect(url_for("main.applications", job_id=application.job_id))
+from flask import Flask
+
+app = Flask(__name__)
+app.config["SECRET_KEY"] = "change-this-secret-key"
+
+app.register_blueprint(main_bp)
